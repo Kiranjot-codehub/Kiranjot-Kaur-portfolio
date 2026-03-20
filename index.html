@@ -354,12 +354,6 @@ color:black;
 font-size:35px;
 padding-top:0px;
 }
-.text{
-    margin-left:135px;
-    margin-top:8px;
-    width:90px;
-    height:100px;
-}    
 .email{
     font-family:Georgia, 'Times New Roman', Times, serif;
     margin-left:-500px;
@@ -367,24 +361,24 @@ padding-top:0px;
     font-size:35px;
     padding-top:-150px;
 }
-.id{
-    margin-left:135px;
-    margin-top:3px;
-    width:90px;
-    height:80px;
-}
 .message{
     font-family:Georgia, 'Times New Roman', Times, serif;
     margin-left:-475px;
     margin-top:-2px;
     font-size:35px;
 }
-.input{
-    margin-left:135px;
-    margin-top:3px;
-    width:90px;
-    height:80px;
+ form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
+input[type="text"],
+input[type="email"],
+{
+  width: 100%;
+  padding: 0.5em;
+  box-sizing: border-box;
+}       
 
         /* --- FOOTER --- */
         footer {
@@ -413,6 +407,27 @@ padding-top:0px;
             .about { grid-template-columns: 1fr; }
             .nav-links { display: none; } /* Simplified for demo */
         }
+        /* Example positions and sizes */
+  .sphere1 {
+    width: 120px;
+    height: 120px;
+    top: 120px;
+    left: 80px;
+  }
+  
+  .sphere2 {
+    width: 120px;
+    height: 120px;
+    bottom: -20px;
+    right: 500px;
+  }
+  
+  .sphere3 {
+    width: 80px;
+    height: 80px;
+    top: 90px;
+    right: 400px;
+  }
     </style>
     <!-- Importing Fonts -->
    
@@ -441,6 +456,9 @@ padding-top:0px;
              <div class="right-img">
                 <img src="kiran.jpg" alt="profile picture">
               </div>
+         <div class="sphere sphere1"></div>
+        <div class="sphere sphere2"></div>
+        <div class="sphere sphere3"></div>
                  </div>
     </section>
 
