@@ -153,13 +153,12 @@
   padding: 40px;
   height:108vh;
             position: relative;
+            flex-wrap:wrap;
 }
 
 .hero-content{
-  text-align:left;
-  padding-left:-60px;
-  max-width: 800px;
-            z-index: 2;
+  padding :10px;
+  max-width: 500px;
 }
 
 .hero h1{
@@ -175,15 +174,22 @@
   font-size:30px;
     margin-bottom: 1.5rem;
 }
+        .right-img{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
 .right-img img{
-  width: 270px;
+  width: 250px;
   border-radius: 50%;
-  margin-right:60px;
-  box-shadow:0 0 9px 5px rgba(94, 97, 100, 0.7);
-  
+  margin:0px;
+  box-shadow:0 0 15px rgba(94, 97, 100, 0.7);
+  height:auto;
+    max-width:100%;
+    transition:0.3s
   }
 .right-img img:hover{
-    transform:scale(1.1);
+    transform:scale(1.05);
     
 }
         /* --- PROJECTS SECTION --- */
@@ -405,7 +411,9 @@ input[type="email"],
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.5rem; }
             .about { grid-template-columns: 1fr; }
-            .nav-links { display: none; } /* Simplified for demo */
+            .nav-links { display: none; }
+            .hero{flex-direction:column;
+                  text-align:center;}/* Simplified for demo */
         }
         /* Example positions and sizes */
   .sphere1 {
