@@ -160,15 +160,7 @@
   padding :10px;
   max-width: 500px;
 }
-.m{
-    font-size:60px;
-    position:abslute;
-    white-space:nowrap;
-    z-index:0;
-    font-weight:bold;
-    top:20%
-    left:10%
-}
+
 .hero h1{
   font-size: 45px;
             line-height: 1.2;
@@ -444,6 +436,20 @@ input[type="email"],
     top: 90px;
     right: 400px;
   }
+.m{
+    position:absolute;
+    top:10%;
+    left:5%
+    font-size:120px;
+    font-weight:800;
+    z-index:0;
+    pointer-events:none;
+}
+        .n{
+            position:relative;
+            z-index:2;
+            max-width:500px;
+        }
     </style>
     <!-- Importing Fonts -->
    
@@ -464,10 +470,12 @@ input[type="email"],
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content hidden">
-               <div class="m"><h1>CODE   DESIGN   CREATE</h1></div>
+               <h1 class="m">CODE   DESIGN   CREATE</h1>
+            <div class="n">
                 <h2>Hi, It's me <p style="color:rgb(101, 199, 245);"><strong>Kiranjot Kaur</strong></p></h2>
                 <p>Aspiring Web Developer Focused on Clean Design<br> and Functionality | Currently pursuing a Web Development course</p>
                 <a href="#projects" class="btn">View My Work</a>
+            </div>
             </div>
              <div class="right-img">
                 <img src="https://framerusercontent.com/images/4wHHl0XvrDRZBL6aK7Tso6BKiE8.png?width=1336&height=976" alt="profile picture">
